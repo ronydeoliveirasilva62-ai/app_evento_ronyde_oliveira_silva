@@ -6,5 +6,9 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/cadastrar-evento")
+def cadastrar_evento():
+    return render_template("cadastra-evento.html")
+
 if __name__ =="__main__":
     app.run(debug=True)
